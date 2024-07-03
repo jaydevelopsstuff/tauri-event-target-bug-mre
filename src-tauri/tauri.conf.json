@@ -1,0 +1,45 @@
+{
+    "productName": "tauri-event-target-bug-mre",
+    "version": "0.0.0",
+    "identifier": "com.tauri.dev",
+    "build": {
+        "beforeDevCommand": "pnpm dev",
+        "devUrl": "http://localhost:1420",
+        "beforeBuildCommand": "pnpm build",
+        "frontendDist": "../build"
+    },
+    "app": {
+        "windows": [
+            {
+                "label": "main-1",
+                "title": "tauri-event-target-bug-mre window 1",
+                "x": 50,
+                "y": 100,
+                "width": 400,
+                "height": 200
+            },
+            {
+                "label": "main-2",
+                "title": "tauri-event-target-bug-mre window 2",
+                "x": 500,
+                "y": 100,
+                "width": 400,
+                "height": 200
+            }
+        ],
+        "security": {
+            "csp": null
+        }
+    },
+    "bundle": {
+        "active": true,
+        "targets": "all",
+        "icon": [
+            "icons/32x32.png",
+            "icons/128x128.png",
+            "icons/128x128@2x.png",
+            "icons/icon.icns",
+            "icons/icon.ico"
+        ]
+    }
+}
